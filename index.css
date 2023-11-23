@@ -1,0 +1,478 @@
+
+/*general*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  
+}
+html{
+  scroll-behavior: smooth;
+
+}
+/*transition*/
+a{ 
+  & .btn{
+  transition:all 300ms ease ;
+
+}
+}
+
+/*nav-bar*/
+
+#desktop-nav{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+align-items: center;  
+height: 15vh;
+/*15vh means to occupy 15% of the total view of the screen*/
+
+  & .nav-links{
+    display: flex;
+    gap: 17px;
+
+      
+& li{
+  list-style: none;
+  & a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    &:hover{
+      text-decoration: underline 2px;
+      text-decoration-color: rgb(113, 112, 112);
+      /*gap between underline and text*/
+      text-underline-offset: 10px;
+      opacity: 0.7;
+
+    }
+  }
+}
+  }
+
+}
+.name{
+  font-weight: 600;
+  font-size: 27px;
+  cursor: default;
+  letter-spacing: 0.05cm;
+}
+/*Section start here*/
+
+.img-profile{
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+ 
+}
+section{
+  margin: 0 5px;
+  padding-top: 5vh;
+  height: 95vh;
+  min-height: fit-content;
+
+}
+#profile{
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+
+}
+.profile-pic-container{
+  width: 390px;
+  height: 390px;
+  margin:  auto 0;
+  
+}
+.text-container{
+  align-self: center;
+  text-align: center;
+
+  & p{
+    font-weight: 600;
+
+  }
+  & .p-1{
+    font-size: 19px;
+    color: rgb(60, 60, 60);
+
+
+  }
+  & .p-2{
+    font-size: 19px;
+    color: rgb(60, 60, 60);
+  }
+  & h1{
+    font-size: 30px;
+    letter-spacing: 0.04cm;
+  }
+}
+#social-icons{
+  display: flex;
+  gap: 9px;
+  justify-content: center;
+
+}
+.icons{
+  height: 27px;
+margin-top: 15px;
+}
+/*button-css*/
+.btn-1{
+padding: 10px;
+border-radius: 21px;
+margin: 6px;
+border: 1px solid black;
+ cursor: pointer;
+ font-weight: 600;
+ background-color: white;
+ transition:   0.2s ease;
+
+
+}
+.btn-2{
+  padding: 10px;
+border-radius: 18px;
+margin: 6px;
+border: 1px solid ;
+cursor: pointer;
+color: white;
+background-color: black;
+font-weight: 600;
+transition:   0.2s ease;
+
+}
+.btn-1:hover{
+  background-color: black;
+  color: white;
+
+}
+.btn-2:hover{
+  background-color: white;
+  color: black;
+
+}
+/*about me -- section*/
+.about{
+  & .about_p-3{
+    text-align: center;
+    font-size: 19px;
+    color: rgb(60, 60, 60);
+  }
+  & h1{
+    text-align: center;
+    font-size: 44px;
+  }
+}
+.about-me-container{
+  display: flex;
+  height: 85vh;
+  padding-left: 160px;
+  padding-right: 110px;
+  gap: 40px;
+}
+.about-me-div1{
+  height: 380px;
+  width: 380px;
+  
+  & .img-2{
+    width: 370px;
+    height: 370px;
+    border-radius: 30px;
+  }
+}
+.about-me-div2{
+  position: relative;
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  & h1{
+    font-size: 19px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: 4px;
+  }
+
+
+  & p{
+    color: rgb(55, 55, 55);
+  }
+}
+.experience{
+  margin-top: 30px;
+  border: 1px solid rgb(80, 80, 80);
+  width: max-content;
+  height: max-content;
+  padding-bottom: 40px;
+  border-radius: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+
+}
+.qualification{
+  margin-top: 30px;
+  border: 1px solid rgb(83, 83, 83);
+  width: max-content;
+  height: max-content;
+  padding-bottom: 40px;
+  border-radius: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+
+}
+.about-me-div2 .lorem-div{
+  position: absolute;
+  top: 46%;
+  color: rgb(64, 64, 64);
+  
+}
+/*experience section css*/
+.Experience{
+
+  & .EXPERIENCE_p-1{
+
+ text-align: center;
+    font-size: 19px;
+    color: rgb(60, 60, 60);
+  }
+  & .h1-EXPERIENCE{
+    font-size: 40px;
+    letter-spacing: 0.04cm;
+    text-align: center;
+
+
+  }
+}
+
+.container_skills{
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+
+  
+
+
+  & h1{
+    color: rgb(81, 81, 81);
+    text-align: center;
+  }
+  & .frontend-container{
+    margin-top: 10px;
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid rgb(80, 80, 80);
+    padding: 30px;
+    border-radius: 25px;
+& ul {
+  &  li{
+    list-style-position: outside;
+    font-weight: 600;
+    margin-top: 10px;
+    gap: 10px;
+    font-size: 21px;
+
+  }
+  
+}
+
+  }
+  & .backend-container{
+    margin-top: 10px;
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid rgb(80, 80, 80);
+    padding: 30px;
+    border-radius: 25px;
+
+& ul {
+  &  li{
+    list-style-position: outside;
+    font-weight: 600;
+    margin-top: 10px;
+    gap: 10px;
+    font-size: 21px;
+
+  }
+  
+}
+
+  }
+}
+.li_1::after{
+  content: 'Intermediate';
+  display: block;
+  font-size: 15px;
+  color: rgb(86, 86, 86);
+
+}
+.li_2::after{
+  content: 'Intermediate';
+  display: block;
+  font-size: 15px;
+  color: rgb(86, 86, 86);
+}
+.li_3::after{
+  content: 'Learning right now';
+  font-size: 15px;
+  color: rgb(86, 86, 86);
+  display: block;
+
+}
+/*projects  section*/
+#projects{
+  height: fit-content;
+
+ 
+  & h1{
+    font-size: 39px;
+    text-align: center;
+
+  }
+  & .container-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: flex-start;
+    height: 100%;
+    padding-top: 20px;
+    width: 100%;
+    align-items: center;
+
+    
+
+    & .project-1{
+     height: 60%;
+     width:60%;
+
+     & .image-pj{
+      width: 100%;
+      height: 100%;
+      margin-bottom: 25px;
+
+/*  use over-flow-hidden property to control overflow of an img */      
+      
+
+     }
+      
+    }
+    & .project-2{
+      height: 60%;
+      width: 60%;
+
+      
+      & .image-pj{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 25px;
+    }
+  }
+
+
+}
+}
+.h1-pj{
+  color: rgb(74, 73, 73);
+  font-size: large;
+  text-align: center;
+}
+.btn-pj{
+  color: black;
+  text-decoration: none;
+  border: 1px solid  gray;
+  text-align: center;
+  margin: 0 45%;
+  width: 120px;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  border-radius: 32px;
+  margin-bottom: 20px;
+
+}
+.btn-pj:hover{
+  background-color: rgb(42, 41, 41);
+  color: white;
+
+}
+
+/*contact section start*/
+#contact{
+  position: relative;
+  height: 65vh;
+  & h2{
+   font-size: 19px; 
+   text-align:center;
+   color: rgb(86, 86, 86);
+   font-weight: 500;
+
+
+  }
+  & h1{
+    font-size: 41px;
+    text-align: center;
+    letter-spacing: 0.03cm;
+  }
+}
+i{
+  color: black;
+  font-size: 28px;
+  margin: 5px;
+}
+
+.footer-container{
+  position: absolute;
+  left: 33%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border: solid 1px;
+  top: 50%;
+  padding: 14px;
+
+
+}
+.email-div{
+  margin-top: 5px;
+
+}
+.email-div a{
+  margin-left: 7px;
+  text-align: center;
+  color: black;
+
+}
+.CR{
+  position: absolute;
+  bottom: 14%;
+  left: 34%;
+}
+.btn-5{
+  display: block;
+  position: absolute;
+  bottom: 13%;
+  right: 20%;
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  font-size: 18px;
+  width: 80px;
+  background: rgb(255, 254, 254);
+  transition: 0.17s;
+  cursor: pointer;
+  transition-timing-function: ease;
+}
+.btn-5:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
