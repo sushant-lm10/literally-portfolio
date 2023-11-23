@@ -327,6 +327,13 @@ transition:   0.2s ease;
   display: block;
 
 }
+.li_4::after{
+  content: 'Basics';
+  font-size: 15px;
+  color: rgb(86, 86, 86);
+  display: block;
+}
+
 /*projects  section*/
 #projects{
   height: fit-content;
