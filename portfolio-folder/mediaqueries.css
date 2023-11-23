@@ -1,0 +1,42 @@
+@media screen and (max-width:500px) {
+html{
+  font-size: 25px;
+}
+#desktop-nav {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: fit-content;
+  padding-left: 10vw;
+  box-sizing: border-box;
+
+  & .name{
+    text-align: center;
+    font-size: 2.2rem;
+    width: 100%;
+    padding-top:3vh;
+  }
+  & .nav-links-container{
+    width: 100%;
+
+    & .nav-links{
+      width: fit-content;
+      font-size: 1.1rem;
+      margin: 0.5rem;
+      letter-spacing: 0.01rem;
+    }
+  }
+}
+
+
+
+
+}
+
+
+
+ 
+ 
